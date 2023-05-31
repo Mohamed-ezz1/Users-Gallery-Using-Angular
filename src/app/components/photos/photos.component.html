@@ -1,0 +1,52 @@
+<!--USer details Toolbar-->
+<div class="container-fluid">
+  <div class="row">
+    <mat-toolbar color="primary">
+      <div class="field col-4" id="name">
+        <span class="value">{{ user.name }}</span>
+      </div>
+      <div class="field col-4">
+        <div class="value" id="email">{{ user.email }}</div>
+        <div class="value" id="phone">{{ user.phone }}</div>
+      </div>
+      <div class="field col-4">
+        <div class="label" id="address-label">Address:</div>
+        <div class="value" id="address">
+          {{
+            user.address.suite +
+              " " +
+              user.address.street +
+              " " +
+              user.address.city
+          }}
+        </div>
+      </div>
+    </mat-toolbar>
+  </div>
+</div>
+
+<!--Photos-->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 style="text-align: center; color: rgba(253, 141, 13, 0.808)">
+        PHOTOS
+      </h1>
+      <hr />
+      <div class="photo-grid">
+        <div class="photo" *ngFor="let photo of photos">
+          <img [src]="photo.url" alt="{{ photo.title }}" />
+          <!-- <p>{{ photo.title }}</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #falseBlock>
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</ng-template>

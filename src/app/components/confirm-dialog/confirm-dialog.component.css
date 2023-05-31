@@ -1,0 +1,9 @@
+.confirm-dialog-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.confirm-dialog-button {
+  margin: 0 8px;
+}

@@ -1,0 +1,49 @@
+#name {
+  text-align: center;
+}
+
+#email {
+  text-align: center;
+
+}
+
+#phone {
+  text-align: center;
+
+}
+
+#address-label {
+  text-align: center;
+
+}
+
+#address {
+  text-align: center;
+
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.photo {
+  flex-basis: 16.6667%;
+  /* 6 photos per row */
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  /* Adjust the height as needed */
+}
+
+.photo p {
+  margin-top: 5px;
+  font-size: 12px;
+}
